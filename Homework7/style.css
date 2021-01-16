@@ -1,0 +1,45 @@
+.disk {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+.disk__item {
+    min-width: 100px;
+    padding: 10px 5px;
+    margin: 0 10px 10px 0;
+    cursor: pointer;
+}
+.disk__item,
+.disk-item-menu,
+.create-menu {
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(173, 172, 166, 0.5);
+}
+.disk-item-menu{
+    position: absolute;
+    background-color: #fff;
+    display: none;
+}
+.disk-item-menu button{
+    display: block;
+    padding: 5px;
+    min-width: 61px;
+    background-color: transparent;
+    
+}
+.disk-item-menu button:hover,
+.create-menu:hover{
+    background-color: gray;
+}
+.create-menu {
+    position: absolute;
+    display: none;
+    padding: 5px 10px;
+    background-color: #fff;
+}
